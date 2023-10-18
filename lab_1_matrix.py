@@ -29,7 +29,6 @@ class MatrixCypher:
         matrix = self._text_to_matrix(encrypted_text, matrix_row_length)
         # matrix.append([' '] * matrix_row_length)
         text_matrix = np.array(matrix)
-        print(text_matrix)
 
         row_len, col_len = text_matrix.shape
         row_key = row_key[:row_len]
@@ -115,6 +114,8 @@ if user_input:
 matrix_cypher = MatrixCypher()
 encrypted_text = matrix_cypher.encrypt(text, row_key, column_key, N)
 print("Оригінальний текст:", text)
+print("Стовпцеве слово-ключ:", column_key)
+print("Рядкове слово-ключ:", row_key)
 print("Зашифрований текст:", encrypted_text)
 
 decrypted_text = matrix_cypher.decrypt(encrypted_text, row_key, column_key, N)
