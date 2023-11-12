@@ -276,25 +276,25 @@ des = DES(
     shift_table=shift_table
 )
 
-plaintext_hex = "SECRET12"
-key_hex = "DESKEY12"
-print('Оригінальний текст (ascii):', plaintext_hex)
-print('Ключ: (ascii)', key_hex)
+plaintext = "SECRET12"
+key = "DESKEY12"
+print('Оригінальний текст (ascii):', plaintext)
+print('Ключ: (ascii)', key)
 # Переведення тексту та ключа в двійкову систему
-plaintext_bin = ascii_to_bin(plaintext_hex)
-key_bin = ascii_to_bin(key_hex)
+plaintext_bin = ascii_to_bin(plaintext)
+key_bin = ascii_to_bin(key)
 print('Оригінальний текст (bin):', plaintext_bin)
 print('Ключ (bin):', key_bin)
 
 rkb = des.get_round_key(key_bin)
 
 encrypted_text_bin = des.encrypt(plaintext_bin, rkb)
-encrypted_text_hex = bin_to_ascii(encrypted_text_bin)
-print('Зашифрований текст (ascii):', encrypted_text_hex)
+encrypted_text = bin_to_ascii(encrypted_text_bin)
+print('Зашифрований текст (ascii):', encrypted_text)
 print('Зашифрований текст (bin):', encrypted_text_bin)
 decrypted_text_bin = des.decrypt(encrypted_text_bin, rkb)
-decrypted_text_hex = bin_to_ascii(decrypted_text_bin)
-print('Розшифрований текст (ascii):', decrypted_text_hex)
+decrypted_text = bin_to_ascii(decrypted_text_bin)
+print('Розшифрований текст (ascii):', decrypted_text)
 print('Розшифрований текст (bin):', decrypted_text_bin)
 
 assert plaintext_bin == decrypted_text_bin
