@@ -57,8 +57,6 @@ class AES:
                 temp[0] = temp[0] ^ self.rcon[i // self.Nk]
             for j in range(4):
                 round_keys[i][j] = round_keys[i - self.Nk][j] ^ temp[j]
-        for l in round_keys:
-            print([a for a in l])
         return round_keys
 
 
