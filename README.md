@@ -5,3 +5,5 @@
 ## [Lab 4 - Number theory. Modular arithmetic](lab4.py)
 ## [Lab 5 - Multiplication of bytes in the Galois Field GF(2^8)](lab5.py)
 ## [Lab 7 - Miller–Rabin primality test. RSA](lab7.py)
+## [Lab 8 - Diffie–Hellman key exchange. RSA](lab8.py)
+## [Lab 9 - ElGamal encryption. RSA](lab9.py)
