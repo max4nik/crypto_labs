@@ -7,3 +7,7 @@
 ## [Lab 7 - Miller–Rabin primality test. RSA](lab7.py)
 ## [Lab 8 - Diffie–Hellman key exchange. RSA](lab8.py)
 ## [Lab 9 - ElGamal encryption. RSA](lab9.py)
+## [Lab 10 - MD5](lab10_md5.py)
+## [Lab 11 - ElGamal signing](lab11_elgamal.py)
+## [Lab 12 - EC ElGamal](lab12.py)
+## [Lab 12.1](lab12_1.py)
